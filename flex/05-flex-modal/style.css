@@ -3,6 +3,16 @@
 html, body {
   height: 100%;
 }
+.header{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+gap: 125px;
+/* border: solid 8px red; */
+margin-left: 8px;
+font-weight: bold;
+font-size: large;
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -15,15 +25,22 @@ body {
   justify-content: center;
 }
 
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-flow: row wrap;
+  padding: 12px;
+  /* border: solid 8px red; */
+  flex-shrink: 1;
 }
 
 .icon {
   color: royalblue;
+  /* border: solid 8px blue; */
   font-size: 26px;
   font-weight: 700;
   background: lavender;
@@ -33,10 +50,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: flex-start;
+  /* order:-2 */
 }
 
 .close-button {
   background: #eee;
+  border: solid 8px red;
   border-radius: 50%;
   color: #888;
   font-weight: 400;
@@ -46,6 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  align-self: center;
   border: 1px solid #eee;
   padding: 0;
 }
@@ -53,6 +74,7 @@ body {
 button {
   cursor: pointer;
   padding: 8px 16px;
+  border: solid 8px red;
   border-radius: 8px;
 }
 
@@ -60,10 +82,20 @@ button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
-}
+  /* border: solid 8px red; */
+margin-left: 50px;}
 
 button.cancel {
   background: white;
   border: 1px solid #ddd;
+  /* border: solid 8px red; */
   color: royalblue;
+}
+
+.text{
+ display: flex;
+ align-self: flex-end;
+ margin-left: 50px;
+ margin-bottom: 15px;
+  /* border: solid 8px blue; */
 }
